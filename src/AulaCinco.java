@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class AulaCinco {
@@ -15,6 +17,12 @@ public class AulaCinco {
         fw = new FileWriter(ARQ_SAIDA);
         bw = new BufferedWriter(fw);
 
+
+
+        br.close();
+        bw.close();
+        fr.close();
+        fw.close();
 //        leitura();
 //        escrita();
 //        formataDataSubString();
@@ -22,7 +30,7 @@ public class AulaCinco {
 //        separarNome();
 
 //        quiz();
-        ordenarNome();
+//        ordenarNome();
     }
 
     private static void ordenarNome() {
@@ -88,4 +96,5 @@ public class AulaCinco {
             linha = br.readLine();
         }
     }
+
 }
